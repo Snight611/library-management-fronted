@@ -1,6 +1,6 @@
-# 📚 Library Management System – Frontend
+# 📚samoei Boys Library Management System – Frontend
 
-This is the frontend interface for the Library Management System. It connects to a backend API and allows users to add books via a simple form.
+This is the frontend interface for the Samoei Boys Library Management System. It connects to a backend API and allows users to add books via a simple form.
 
 ## 🌐 Live Site
 
