@@ -12,10 +12,10 @@
     />
     <style>
       :root {
-        --bg: #f0f4f8;
-        --primary: #0f172a;
-        --text: #1e293b;
-        --accent: #3b82f6;
+        --bg: #f7f9fc;
+        --primary: #1e40af;
+        --text: #1f2937;
+        --accent: #4f46e5;
         --transition: 0.3s ease;
       }
 
@@ -29,10 +29,10 @@
       }
 
       .dark {
-        --bg: #1e293b;
-        --text: #f1f5f9;
-        --primary: #1e40af;
-        --accent: #60a5fa;
+        --bg: #1f2937;
+        --text: #f3f4f6;
+        --primary: #93c5fd;
+        --accent: #818cf8;
       }
 
       header {
@@ -44,30 +44,29 @@
         color: white;
       }
 
-      header h1 {
-        margin: 0;
-        font-size: 1.5rem;
-      }
-
       .container {
         max-width: 800px;
         margin: 2rem auto;
-        padding: 2rem;
+        padding: 1rem;
         background: white;
-        border-radius: 16px;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
       }
 
-      h2 {
+      h1, h2, h3 {
+        margin: 0 0 1rem;
+      }
+
+      .welcome {
         text-align: center;
-        color: var(--primary);
+        margin-bottom: 2rem;
       }
 
       button, select, input, textarea {
         font-family: inherit;
         padding: 0.75rem;
-        border-radius: 10px;
-        border: 1px solid #cbd5e1;
+        border-radius: 8px;
+        border: 1px solid #d1d5db;
         width: 100%;
         margin-bottom: 1rem;
       }
@@ -75,13 +74,12 @@
       .btn {
         background-color: var(--accent);
         color: white;
-        font-weight: 600;
         cursor: pointer;
         transition: background var(--transition);
       }
 
       .btn:hover {
-        background-color: #2563eb;
+        background-color: #4338ca;
       }
 
       .toggle-dark {
@@ -113,7 +111,11 @@
       <button class="toggle-dark" onclick="toggleTheme()">🌙 Dark Mode</button>
     </header>
     <div class="container">
-      <h2>Add a Book</h2>
+      <div class="welcome">
+        <h2>Welcome to Our School Library</h2>
+        <p>Manage your books efficiently and easily. Add new titles, keep track of copies, and maintain a modern, organized collection for students.</p>
+      </div>
+      <h3>Add a Book</h3>
       <form id="bookForm">
         <input type="text" id="title" placeholder="Title" required />
         <input type="text" id="author" placeholder="Author" required />
@@ -177,3 +179,4 @@
     </script>
   </body>
 </html>
+
